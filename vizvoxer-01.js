@@ -1,6 +1,9 @@
 var newStr = `eye`;
+function foo(srt) {
+var subString1 = srt.substr(0, (srt.length + 1)/2);
+var subString2 = (srt.substr((srt.length)/2)).split('').reverse().join(``);
+    return subString1 == subString2
+}
 
-var subString1 = newStr.substr(0, (newStr.length + 1)/2);
-var subString2 = (newStr.substr((newStr.length)/2)).split('').reverse().join(``);
 
-console.log(subString1 == subString2);
+console.log(foo(newStr))
