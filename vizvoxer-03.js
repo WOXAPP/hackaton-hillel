@@ -1,6 +1,7 @@
-var resultArray = [];
 
 function cleaningArray(arr, ...arg) {
+var resultArray = [];
+
   for ( var i = 0; i < arr.length; i++ ) {
     for ( var j = 0; j < arg.length; j++ ) {
       if ( arr[i] == arg[j] ) {
@@ -13,10 +14,10 @@ function cleaningArray(arr, ...arg) {
      resultArray.push(item)
  })
              
-    return console.log(resultArray)
+    return resultArray
 }
 
-cleaningArray ([1, 2, 3, 1, 2, 3], 1, 2);
+console.log(cleaningArray ([1, 2, 3, 1, 2, 3], 1, 2));
 
 
   
